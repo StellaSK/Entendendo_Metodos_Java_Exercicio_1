@@ -41,7 +41,7 @@ public class Main {
         numero2 = sc.nextDouble();
         Calculadora.divisao(numero1,numero2);
 
-        // EMPRESTIMO
+        // EMPRESTIMO;
 
     }
 }
