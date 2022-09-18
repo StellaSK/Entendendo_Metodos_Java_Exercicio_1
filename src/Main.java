@@ -47,18 +47,37 @@ public class Main {
         Calculadora.divisao(numero1,numero2);
         System.out.println();
 
-        //ESPACADOR
+        // ESPACADOR
         System.out.println("=====================================");
         System.out.println();
 
         // VARIAVEL DO METODO: MENSAGEM
         int hora;
 
-        // MENSAGEM;
+        // MENSAGEM
         System.out.println("MENSAGEM");
         System.out.println("=====================================");
         System.out.println("Digite um horário fechado: ");
         hora = sc.nextInt();
         Mensagem.mensagem(hora);
+
+        // ESPACADOR
+        System.out.println("=====================================");
+        System.out.println();
+
+        // VARIAVEL DO METODO: EMPRESTIMO
+        int quantidadeParcelas;
+        double valor;
+
+        // EMPRESTIMO
+        System.out.println("EMPRESTIMO");
+        System.out.println("=====================================");
+        System.out.println("A nossa taxa fixa por numero de parcelas eh de 0,15.");
+        System.out.println("Digite um numero de 1 a 12:");
+        quantidadeParcelas = sc.nextInt();
+        Emprestimo.getParcelas(quantidadeParcelas);
+        System.out.println("Qual é o valor do emprestimo?");
+        valor = sc.nextDouble();
+        Emprestimo.calcular(valor, quantidadeParcelas);
     }
 }
