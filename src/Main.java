@@ -5,7 +5,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         double numero1, numero2;
-        double totalSoma;
 
         // CALCULADORA
         System.out.println("CALCULADORA");
@@ -41,6 +40,8 @@ public class Main {
         System.out.println("Segundo numero: ");
         numero2 = sc.nextDouble();
         Calculadora.divisao(numero1,numero2);
+
+        // EMPRESTIMO
 
     }
 }
